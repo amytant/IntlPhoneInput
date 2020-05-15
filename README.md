@@ -1,5 +1,4 @@
 # International Phone Input #
-[![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-IntlPhoneInput-green.svg?style=true)](https://android-arsenal.com/details/1/2976)
 
 ## What is it?
 **IntlNumberInput** is a custom view for Android that allows the user to enter his phone number in an
@@ -11,7 +10,7 @@ country, displays a relevant placeholder and auto formats the number as they typ
 
 
 ## Features
-1. Formatting the number as the user types Aautomatically
+1. Formatting the number as the user types automatically
 2. Automatically set the input placeholder to an example number for the selected country
 3. Selecting a country from the dropdown will update the dial code in the input
 4. Typing a different dial code will automatically update the displayed flag
@@ -24,14 +23,14 @@ country, displays a relevant placeholder and auto formats the number as they typ
 ## Download
 Download via Gradle or Maven:
 ```groovy
-compile 'net.rimoto:intlphoneinput:1.0.1'
+compile 'net.amytant:intlphoneinput:1.0.2'
 ```
 or Maven:
 ```xml
 <dependency>
-  <groupId>net.rimoto</groupId>
+  <groupId>net.amytant</groupId>
   <artifactId>intlphoneinput</artifactId>
-  <version>1.0.1</version>
+  <version>1.0.2</version>
 </dependency>
 ```
 
@@ -108,12 +107,6 @@ if(phoneInputView.isValid()) {
 2. Flag images from [region-flags](https://github.com/behdad/region-flags)
 3. Original country data from mledoze's [World countries in JSON, CSV and XML](https://github.com/mledoze/countries)
 4. Formatting/validation/example number code from [libphonenumber](https://github.com/googlei18n/libphonenumber)
-
-# Sponsors
-Thanks to our sponsors for this project:
-
-1. [JetBrains](http://www.jetbrains.com/) - for providing the great IDE [PhpStorm](http://www.jetbrains.com/phpstorm/)
-1. [Rimoto](http://www.rimoto.com)
 
 # LICENSE
     Copyright 2015 Rimoto LTD, AlmogBaku

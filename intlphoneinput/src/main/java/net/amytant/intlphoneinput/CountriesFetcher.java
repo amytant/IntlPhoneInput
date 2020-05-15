@@ -1,4 +1,4 @@
-package net.rimoto.intlphoneinput;
+package net.amytant.intlphoneinput;
 
 
 import android.content.Context;
@@ -73,10 +73,17 @@ public class CountriesFetcher {
          * @return index of the item in the list
          */
         public int indexOfIso(String iso) {
-            for (int i = 0; i < this.size(); i++) {
-                if (this.get(i).getIso().toUpperCase().equals(iso.toUpperCase())) {
-                    return i;
+            try {
+                if (iso.equals(null) || iso.equals("")) {
+                    for (int i = 0; i < this.size(); i++) {
+                        String i_iso = this.get(i).getIso().toUpperCase();
+
+                        if (i_iso.equals(iso.toUpperCase())) return i;
+                    }
                 }
+            }
+            catch (NullPointerException e) {
+                e.printStackTrace();
             }
             return -1;
         }

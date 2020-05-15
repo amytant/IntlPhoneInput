@@ -10,7 +10,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="net.rimoto.intlphoneinput.demo.MainActivity">
+    tools:context="net.amytant.intlphoneinput.demo.MainActivity">
 
     <TextView
         android:layout_width="wrap_content"
@@ -18,7 +18,7 @@
         android:layout_marginTop="36dp"
         android:text="Custom" />
 
-    <net.rimoto.intlphoneinput.IntlPhoneInput
+    <net.amytant.intlphoneinput.IntlPhoneInput
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:flagPaddingBottom="4dp"
@@ -34,7 +34,7 @@
         android:layout_marginTop="36dp"
         android:text="Default values" />
 
-    <net.rimoto.intlphoneinput.IntlPhoneInput
+    <net.amytant.intlphoneinput.IntlPhoneInput
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 

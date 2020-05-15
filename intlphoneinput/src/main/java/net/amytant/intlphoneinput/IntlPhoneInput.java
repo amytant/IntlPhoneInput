@@ -1,4 +1,4 @@
-package net.rimoto.intlphoneinput;
+package net.amytant.intlphoneinput;
 
 import android.annotation.TargetApi;
 import android.content.Context;

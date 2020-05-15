@@ -1,4 +1,4 @@
-package net.rimoto.intlphoneinput.demo;
+package net.amytant.intlphoneinput.demo;
 
 import org.junit.Test;
 

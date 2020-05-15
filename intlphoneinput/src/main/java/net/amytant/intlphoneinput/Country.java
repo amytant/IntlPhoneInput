@@ -1,4 +1,4 @@
-package net.rimoto.intlphoneinput;
+package net.amytant.intlphoneinput;
 
 public class Country {
     /**

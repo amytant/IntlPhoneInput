@@ -1,33 +1,35 @@
 apply plugin: 'com.android.library'
 
 android {
-    compileSdkVersion 25
-    buildToolsVersion '25.0.2'
+    compileSdkVersion 'android-R'
+    buildToolsVersion '30.0.0-rc4'
 
     defaultConfig {
-        minSdkVersion 14
-        targetSdkVersion 25
-        versionCode 101
-        versionName "1.0.1"
+        minSdkVersion 23
+        targetSdkVersion 29
+        versionCode 102
+        versionName "1.0.2"
     }
     buildTypes {
         release {
             minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
 }
 
 dependencies {
-    compile 'com.googlecode.libphonenumber:libphonenumber:7.7.2'
-    compile 'com.android.support:appcompat-v7:25.2.0'
+    implementation 'com.googlecode.libphonenumber:libphonenumber:8.12.3'
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    androidTestImplementation 'junit:junit:4.13'
+    androidTestImplementation 'androidx.test:runner:1.2.0'
 }
 
 ext {
-    groupId = 'net.rimoto'
-    versionId = '1.0.1'
-    gitProjectUrl = "https://github.com/rimoto/IntlPhoneInput"
-    gitUrl = "https://github.com/rimoto/IntlPhoneInput.git"
+    groupId = 'net.amytant'
+    versionId = '1.0.2'
+    gitProjectUrl = "https://github.com/amytant/IntlPhoneInput"
+    gitUrl = "https://github.com/amytant/IntlPhoneInput.git"
 }
 
 group = groupId  // Maven Group ID for the artifact
@@ -36,7 +38,7 @@ version = versionId
 Properties properties = new Properties()
 properties.load(project.rootProject.file('local.properties').newDataInputStream())
 
-apply plugin: 'com.github.dcendents.android-maven'
+/* apply plugin: 'com.github.dcendents.android-maven'
 install {
     repositories.mavenInstaller {
         // This generates POM.xml with proper parameters
@@ -60,7 +62,7 @@ install {
                 }
                 developers {
                     developer {
-                        name "Rimoto"
+                        name "amytant"
                     }
                 }
                 scm {
@@ -70,7 +72,7 @@ install {
             }
         }
     }
-}
+} */
 
 task sourcesJar(type: Jar) {
     from android.sourceSets.main.java.srcDirs
@@ -91,7 +93,7 @@ artifacts {
     archives sourcesJar
 }
 
-apply plugin: 'com.jfrog.bintray'
+/* apply plugin: 'com.jfrog.bintray'
 bintray {
     user = properties.getProperty("bintray.user")
     key = properties.getProperty("bintray.apikey")
@@ -99,7 +101,7 @@ bintray {
     pkg {
         repo = 'maven'
         name = 'IntlPhoneInput'
-        userOrg = "rimoto"
+        userOrg = "amytant"
         licenses = ['Apache-2.0']
         publish = true
         publicDownloadNumbers = true
@@ -113,4 +115,4 @@ bintray {
             }
         }
     }
-}
+} */

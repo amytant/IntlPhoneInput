@@ -1,4 +1,4 @@
-package net.rimoto.intlphoneinput;
+package net.amytant.intlphoneinput;
 
 import android.content.Context;
 import android.view.LayoutInflater;

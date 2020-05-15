@@ -1,6 +1,6 @@
-package net.rimoto.intlphoneinput.demo;
+package net.amytant.intlphoneinput.demo;
 
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 
 public class MainActivity extends AppCompatActivity {
